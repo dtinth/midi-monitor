@@ -1,0 +1,5 @@
+name: midi-monitor
+version: master
+title: 'midi-monitor'
+nav:
+  - modules/ROOT/nav.adoc

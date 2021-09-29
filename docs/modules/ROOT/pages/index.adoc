@@ -1,0 +1,32 @@
+= midi-monitor
+
+Display the incoming MIDI messages in real-time.
+
+* https://github.com/dtinth/midi-monitor[Source code on GitHub]
+
+== Building
+
+Compile from source, linking against the `rtmidi` library.
+
+Debian:
+
+ $ sudo apt install librtmidi-dev
+ $ make
+
+macOS on M1 with Homebrew installed at `/opt/homebrew`:
+
+ $ brew install rtmidi
+ $ make -f Makefile.macos-aarch64
+
+== Running
+
+ $ ./midimonitor
+
+== Output
+
+Output will be in TSV format. Example:
+
+[source,tsv]
+----
+include::example$output.tsv[]
+----
